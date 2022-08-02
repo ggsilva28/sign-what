@@ -1,0 +1,20 @@
+form {
+	width: 400px;
+
+	.link {
+		align-self: start;
+		font-size: 12px;
+	}
+
+	.create-account {
+		align-self: start;
+		margin-top: 60px;
+		.link {
+			font-size: 16px;
+		}
+	}
+
+	button{
+		width: 120px;
+	}
+}

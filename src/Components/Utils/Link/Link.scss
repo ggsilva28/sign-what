@@ -1,0 +1,10 @@
+.link{
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 14px;
+    display: block;
+
+    span{
+        color: var(--color-background-contrast);
+    }
+}
