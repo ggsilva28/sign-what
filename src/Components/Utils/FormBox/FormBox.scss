@@ -26,6 +26,7 @@
 		grid-area: form;
 		width: 460px;
 		padding: 0px 0px 45px 45px;
+		z-index: 10;
 
 		.form-title{
 			align-self: start;
@@ -37,6 +38,7 @@
 	.side-image {
 		grid-area: side-image;
 		width: 300px;
+		z-index: 1;
 
 		img{
 			position: absolute;
@@ -49,5 +51,6 @@
 	.title {
 		grid-area: title;
 		padding: 45px;
+		z-index: 10;
 	}
 }
