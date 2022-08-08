@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "dist/**",
-            "use": "@vercel/react"
+            "use": "@vercel/static"
         }
     ]
 }
