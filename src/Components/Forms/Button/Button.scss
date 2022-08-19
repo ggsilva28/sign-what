@@ -1,4 +1,4 @@
-.btn{
+.btn[type="button"], .btn[type="submit"], .btn[type="reset"] {
     padding: 8px 24px;
     border-radius: 8px;
     background-color: var(--color-primary);
@@ -9,5 +9,14 @@
 
     &:hover{
         filter: saturate(1.2);
+    }
+
+    &:disabled{
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    svg{
+        margin-left: 10px;
     }
 }
