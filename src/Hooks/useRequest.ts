@@ -21,10 +21,10 @@ export const useRequest = () => {
         return request('delete', url);
     }
 
-    const request = async (method: string, url: string, params?: any) => {
+    const request = async (method: string, url: string, params: any = '') => {
         console.log('SEND REQUEST', method, url, params);
 
-        if(token){
+        if (token) {
             axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
         }
 

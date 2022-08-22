@@ -17,7 +17,16 @@ function App() {
 				<Route path="/" element={<Login />}></Route>
 				<Route path="/login" element={<Login />}></Route>
 				<Route path="/create-account" element={<CreateAccount />}></Route>
-				<Route path="/dashboard" element={<RequiredAuth element={<Dashboard />} />}></Route>
+				{/* Path dashboard with RequiredAuth */}
+
+				<Route
+					path="/dashboard"
+					element={
+						<RequiredAuth>
+							<Dashboard />{" "}
+						</RequiredAuth>
+					}
+				/>
 			</Routes>
 			<ToastContainer />
 		</AuthProvider>
