@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 import "./Login.scss";
 
 //Images
-import rightImage from "../../Assets/img/right-style.png";
-import signWhatLogo from "../../Assets/img/sign-what.png";
+import rightImage from "../../assets/img/right-style.png";
+import signWhatLogo from "../../assets/img/sign-what.png";
 
 //Components
 import Input from "../../Components/Forms/Input/Input";
