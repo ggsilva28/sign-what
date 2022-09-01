@@ -25,9 +25,9 @@ const Menu = (props: any) => {
 			</div>
 
 			<div className="menu-items item">
-				<MenuItem icon={faList} title="Assinaturas" imgUrl="../../../assets/svg/signature-icon.svg" link="/dashboard" />
-				<MenuItem icon={faUser} title="Configurações" imgUrl="../../../assets/svg/configure-icon.svg" link="/configure" />
-				<MenuItem icon={faGear} title="Meus Dados" imgUrl="../../../assets/svg/profile-icon.svg" link="/profile" />
+				<MenuItem icon={faList} title="Assinaturas" imgUrl="../../../assets/img/signature-icon.png" link="/dashboard" />
+				<MenuItem icon={faUser} title="Configurações" imgUrl="../../../assets/img/configure-icon.png" link="/configure" />
+				<MenuItem icon={faGear} title="Meus Dados" imgUrl="../../../assets/img/profile-icon.png" link="/profile" />
 			</div>
 
 			<div className="menu-items-end item">

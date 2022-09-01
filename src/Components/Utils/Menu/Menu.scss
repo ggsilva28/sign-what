@@ -28,6 +28,10 @@
     .menu-items{
         flex: 1;
         padding: 20px;
+
+        .menu-item-container{
+            margin-bottom: 10px;
+        }
     }
 
     .menu-items-end{
