@@ -1,0 +1,36 @@
+.menu-container {
+	position: absolute;
+	left: 0px;
+	top: 25px;
+	width: 350px;
+	height: calc(100% - 50px);
+	background-color: var(--color-light);
+	border-radius: 25px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+    .item{
+        width: 100%;
+    }
+
+    .logo{
+        padding: 45px;
+
+        img{
+            margin: 0px auto;
+            height: 30px;
+        }
+    }
+
+    .menu-items{
+        flex: 1;
+        padding: 20px;
+    }
+
+    .menu-items-end{
+        justify-self: flex-end;
+    }
+}

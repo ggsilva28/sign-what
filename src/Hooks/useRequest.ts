@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://sign-what-api.herokuapp.com';
+const baseURL = 'https://sign-what.onrender.com';
 
 export const useRequest = () => {
     const token = localStorage.getItem('sign-what:token');
