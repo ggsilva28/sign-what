@@ -18,15 +18,15 @@ type MenuItem = {
 const btn = (props: MenuItem) => {
 	const [image, setImage] = useState("");
 
-	const getImage = useCallback(async () => {
+	const getImage = async () => {
 		if (!props.imgUrl) return;
 		try {
-			const image = await import(props.imgUrl);
+			const image = await import(`../../../assets/img/${props.imgUrl}.png`);
 			if (image) {
 				setImage(image.default);
 			}
 		} catch (err) {}
-	}, []);
+	};
 
 	useEffect(() => {
 		getImage();
