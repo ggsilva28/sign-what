@@ -8,6 +8,7 @@
     height: 70px;
 	padding: 15px 0px 15px 25px;
 	border-radius: 12px;
+	transition: 500ms;
 
 	display: flex;
 	flex-flow: row nowrap;
@@ -16,6 +17,10 @@
 
 	.title {
 		flex: 1;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: clip;
+		word-break: keep-all;
 	}
 
 	.icon {
@@ -25,6 +30,11 @@
     .img img{
         border-radius: 0px 12px 12px 0px;
     }
+
+	&:hover{
+		background-color: rgba(var(--color-primary-rgb), 0.1);
+		cursor: pointer;
+	}
 }
 
 .active .menu-item {
