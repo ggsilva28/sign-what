@@ -1,11 +1,19 @@
 import "./Item.scss";
 
-const Item = (props: any) => {
-    return (
-        <div className="item-container">
-            {props.children}
-        </div>
-    )
+type ItemProps = {
+	children: any;
+	type?: string;
+	className?: string;
 };
 
-export default Item
+const defaultProps = {
+	type: "row-space-between"
+};
+
+const Item = (props: ItemProps) => {
+	props = { ...defaultProps, ...props };
+
+	return <div className={`item-container ${props.type} ${props.className}`}>{props.children}</div>;
+};
+
+export default Item;

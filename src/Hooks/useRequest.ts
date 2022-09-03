@@ -2,26 +2,34 @@ import axios from 'axios';
 
 const baseURL = 'https://sign-what.onrender.com';
 
+type Response = {
+    isOk: boolean;
+    code: number | string;
+    data?: any;
+    error?: any;
+    message: string;
+}
+
 export const useRequest = () => {
     const token = localStorage.getItem('sign-what:token');
 
-    function get(url: string) {
+    function get(url: string): Promise<Response> {
         return request('get', url);
     }
 
-    function post(url: string, params: any) {
+    function post(url: string, params: any): Promise<Response> {
         return request('post', url, params);
     }
 
-    function put(url: string, params: any) {
+    function put(url: string, params: any): Promise<Response> {
         return request('put', url, params);
     }
 
-    function deleteMethod(url: string) {
+    function deleteMethod(url: string): Promise<Response> {
         return request('delete', url);
     }
 
-    const request = async (method: string, url: string, params: any = '') => {
+    const request = async (method: string, url: string, params: any = ''): Promise<Response> => {
         console.log('SEND REQUEST', method, url, params);
 
         if (token) {
@@ -61,7 +69,7 @@ export const useRequest = () => {
             return {
                 isOk: false,
                 data: error.response.result || {},
-                status: error.response.status,
+                code: error.response.status,
                 message: error.response.data.error
             };
         }

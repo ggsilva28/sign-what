@@ -2,4 +2,13 @@
     background-color: var(--color-light);
     padding: 15px;
     border-radius: 15px;
+
+    width: 100%;
+}
+
+.item-container.row-space-between{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
